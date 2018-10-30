@@ -1,0 +1,95 @@
+a {
+    display: block;
+}
+
+#title {
+    text-align: center;
+}
+
+body {
+    background: lightgreen;
+    color: orangered;
+}
+
+.job-dropdown,
+.cat-dropdown {
+    display: none;
+}
+
+.no-border {
+    border: none;
+}
+
+.job:hover .job-dropdown {
+    display: block;
+}
+
+.job:hover .job-button {
+    background: lightgreen;
+    color: orangered;
+}
+
+.job-dropdown button {
+    background: lightgreen;
+}
+
+.job-dropdown button:hover {
+    background: lightskyblue;
+}
+
+.categories:hover .cat-dropdown {
+    display: block;
+}
+
+.categories:hover .cat-button {
+    background: lightgreen;
+    color: orangered;
+}
+
+.cat-dropdown button {
+    background: lightgreen;
+}
+
+.cat-dropdown button:hover {
+    background: lightskyblue;
+}
+
+#container {
+    font-family: URW Chancery L, cursive;
+    display: block;
+    padding: 10px 200px 20px 150px;
+}
+
+.margin-down {
+    margin-bottom: 10px;
+}
+
+i {
+    border: solid orangered;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.submit-btn {
+    text-align: center;
+    background: green;
+    font-size: 20px;
+    color: white;
+}
+
+.button-div {
+    text-align: center;
+}
+
+textarea {
+    width: 300px;
+    resize: both;
+    overflow: auto;
+}

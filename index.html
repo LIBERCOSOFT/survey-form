@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">Survey Form </h1>
+    </header>
+
+    <section>
+        <form>
+            <div id="container">
+                <fieldset class="margin-down">
+                    <legend>Name</legend>
+                    <input type="text" id="nameField" required>
+                </fieldset>
+
+                <fieldset class="margin-down">
+                    <legend>Email</legend>
+                    <input type="email" id="emailField" required>
+                </fieldset>
+
+                <fieldset class="margin-down">
+                    <legend> Age </legend>
+                    <input type="number" id="numberField" min="1" required>
+                </fieldset>
+
+                <fieldset class="margin-down">
+                    <legend>Current Job Status</legend>
+                    <div class="job">
+                        <a class="job-button no-border" id="jobStatus-btn">Select an option <i class=" arrow-down "></i></a>
+                        <div class="job-dropdown">
+                            <button class="no-border" onclick="studentFunc()" type="button">Student</button>
+                            <button class="no-border" onclick="jobFunc()" type="button">Full Time Job</button>
+                            <button class="no-border" onclick="learnerFunc()" type="button">Full Time Learner</button>
+                            <button class="no-border" onclick="notSayFunc()" type="button">Prefer Not To Say</button>
+                            <button class="no-border" onclick="othersFunc()" type="button">Others</button>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="margin-down">
+                    <legend>Recommendation Gauge</legend>
+                    <div class="rec-radio">
+                        <input type="radio" id="surely-radio" name="guage-radio">
+                        <label for="surely-radio">Sure</label>
+                        <input type="radio" id="average-radio" name="guage-radio">
+                        <label for="average-radio">Average</label>
+                        <input type="radio" id="not-radio" name="guage-radio">
+                        <label for="not-radio">Not Really</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="margin-down">
+                    <legend>Best Choice On freeCodeCamp</legend>
+                    <div class="categories">
+                        <a class="cat-button no-border" id="cat-btn">Select an option <i class=" arrow-down "></i></a>
+                        <div class="cat-dropdown">
+                            <button class="no-border" onclick="challengesFunc()" type="button">Challenges</button>
+                            <button class="no-border" onclick="projectsFunc()" type="button">Projects</button>
+                            <button class="no-border" onclick="communityFunc()" type="button">Community</button>
+                            <button class="no-border" onclick="openFunc()" type="button">Open Source</button>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="margin-down">
+                    <legend>Section(s) to improve on (Click all that apply):</legend>
+                    <div class="improvement-section">
+
+                        <input type="checkbox" id="front-check">
+                        <label for="front-check">Front-end Projects</label><br>
+
+                        <input type="checkbox" id="back-check">
+                        <label for="back-check">Back-end Projects</label><br>
+
+                        <input type="checkbox" id="data-check">
+                        <label for="data-check">Data Visualization</label><br>
+
+                        <input type="checkbox" id="challenge-check">
+                        <label for="challenge-check">Challenges</label><br>
+
+                        <input type="checkbox" id="open-check">
+                        <label for="open-check">Open Source Community</label><br>
+
+                        <input type="checkbox" id="gitter-check">
+                        <label for="gitter-check">Gitter help rooms</label><br>
+
+                        <input type="checkbox" id="video-check">
+                        <label for="video-check">Videos</label><br>
+
+                        <input type="checkbox" id="city-check">
+                        <label for="city-check">City Meetups</label><br>
+
+                        <input type="checkbox" id="wiki-check">
+                        <label for="wiki-check">Wiki</label><br>
+
+                        <input type="checkbox" id="forum-check">
+                        <label for="forum-check">Forum</label><br>
+
+                        <input type="checkbox" id="add-check">
+                        <label for="add-check">Additional Courses</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="margin-down">
+                    <legend>Comments or Suggestions</legend>
+                    <textarea placeholder="Enter Comments or Suggestions here....."></textarea>
+                </fieldset>
+            </div>
+            <div class="button-div">
+                <input type="button" value="Submit" class="submit-btn">
+            </div>
+        </form>
+    </section>
+
+
+    <footer>&copy s.oladipo</footer>
+
+    <script src="js/index.js">
+    </script>
+</body>
+
+</html>
