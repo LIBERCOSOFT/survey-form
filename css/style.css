@@ -1,63 +1,52 @@
-a {
-    display: block;
-}
+
 
 #title {
     text-align: center;
 }
 
 body {
-    background: lightgreen;
-    color: orangered;
+    background: linear-gradient(#CCFFFF, #FFCCCC);
+    padding: 0em 3em 1em 3em;
 }
 
 .job-dropdown,
 .cat-dropdown {
-    display: none;
+    padding: .5em;
 }
 
 .no-border {
     border: none;
 }
 
-.job:hover .job-dropdown {
-    display: block;
-}
-
-.job:hover .job-button {
-    background: lightgreen;
-    color: orangered;
+.job-dropdown:hover {
+    padding: 1em;
 }
 
 .job-dropdown button {
-    background: lightgreen;
+    background: #add8ef;
+    padding: .5em;
 }
 
 .job-dropdown button:hover {
-    background: lightskyblue;
+    background: #87cefa;
 }
 
-.categories:hover .cat-dropdown {
-    display: block;
-}
-
-.categories:hover .cat-button {
-    background: lightgreen;
-    color: orangered;
+.cat-dropdown:hover {
+    padding: 1em;
 }
 
 .cat-dropdown button {
-    background: lightgreen;
+    background: #add8ef;
+    padding: .5em;
 }
 
 .cat-dropdown button:hover {
-    background: lightskyblue;
+    background: #87cefa;
 }
 
 #container {
     font-family: URW Chancery L, cursive;
     display: block;
-    padding: 10px 200px 20px 150px;
 }
 
 .margin-down {
@@ -65,7 +54,7 @@ body {
 }
 
 i {
-    border: solid orangered;
+    border: solid #00bfff;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -73,15 +62,16 @@ i {
 }
 
 .arrow-down {
-    transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
 
+
 .submit-btn {
-    text-align: center;
-    background: green;
-    font-size: 20px;
-    color: white;
+    background: #87ceeb;
+    font-size: 2em;
+    padding: .5em;
+    margin-bottom: 1em;
+    border: none;
 }
 
 .button-div {
@@ -89,7 +79,6 @@ i {
 }
 
 textarea {
-    width: 300px;
-    resize: both;
     overflow: auto;
+    width: 100%;
 }
